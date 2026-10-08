@@ -1,0 +1,46 @@
+MIT License（含附加条款 / with Additional Terms）
+Copyright (c) 2026 zsmb07
+
+────────────────────────────────────────────────────────────────
+附加条款（Additional Terms）
+────────────────────────────────────────────────────────────────
+
+本项目（zhihuishu-auto-watch）仅供**个人学习、研究与技术交流**使用。
+
+1. **禁止商业用途。** 不得将本项目及其修改版本、衍生版本用于任何
+   商业用途，包括但不限于：出售、出租、以本项目为基础提供付费服务、
+   或将其集成进任何商业产品。
+
+2. **禁止规模化分发。** 不得将本项目用于面向公众的托管服务、软件
+   分发平台或付费社群。
+
+3. **使用风险自负。** 使用者需自行确认其行为符合所在平台的用户协议
+   及当地法律法规。作者不对使用本项目的任何后果承担责任。
+
+4. 上述附加条款与下方 MIT 条款冲突时，**以附加条款为准**。
+
+> ⚠️ 说明：加入非商业限制后，本项目**不再是 OSI 定义的标准开源项目**，
+> 而属于「源码公开（source-available）」项目。如需完全开源的授权，
+> 请删除本节附加条款。
+
+────────────────────────────────────────────────────────────────
+MIT 条款正文
+────────────────────────────────────────────────────────────────
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

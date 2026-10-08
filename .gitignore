@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------
+# .gitignore — zsmb07 / zhihuishu-auto-watch
+# 仅包含 Python 标准忽略项
+# ---------------------------------------------------------------
+
+# --- 字节码 / 缓存 ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- 编译产物 ---
+*.so
+
+# --- 打包 / 分发 ---
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# --- 虚拟环境 ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- 编辑器 / IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- 测试 / 覆盖率 ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- 类型检查 / 静态分析 ---
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pylint.d/
+
+# ---------------------------------------------------------------
+# 以下项目「故意不忽略」——如需开启，去掉行首的 #
+# ---------------------------------------------------------------
+# 运行产物（脚本跑起来会产出截图 / 日志）
+# screenshots/
+# *.log
+# debug_*.txt
+#
+# 系统文件（macOS / Windows）
+# .DS_Store
+# Thumbs.db
+# desktop.ini
+#
+# 个人配置
+# config.local.py
+# *.local.json
+# .env
