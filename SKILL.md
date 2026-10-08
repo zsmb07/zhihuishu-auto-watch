@@ -1,1 +1,249 @@
-LS0tCm5hbWU6IHpoaWh1aXNodS1hdXRvLXdhdGNoCmRlc2NyaXB0aW9uOiDmmbrmhafmoJEoemhpaHVpc2h1LmNvbSnor77nqIvlrabkuaDpobXoh6rliqjlgLzlrojliqnmiYvjgILpgILnlKjkuo7osYbljIUoRG91YmFvKeetieW4puinhuinieiDveWKm+OAgeWPr+aOp+WItua1j+iniOWZqOeahOWkp+aooeWei+OAguinhumikeaSreaUvuS4reiHquWKqOajgOa1i+W5tuS9nOetlOW8uemimO+8iOWNlemAiS/liKTmlq3pgIlB77yM5aSa6YCJ5YWo6YCJ77yJ77yM562U5a6M54K55YWz6Zet77yb5q+P5LiA6L2u6YO95qCh6aqM5Y+z5L6n55uu5b2V77yM5b2T5YmN5bCP6IqC5Ye6546w6JOd6Imy5Yu+5a6M5oiQ5qCH6K6w5ZCO6Ieq5Yqo5YiH5o2i5Yiw5LiL5LiA5Liq5pyq5a6M5oiQ44CB5pyJ5pe26ZW/55qE5bCP6IqC5bm254K55Ye755S76Z2i5byA5aeL5pKt5pS+77yM5L+d6K+B5pKt5pS+55qE6aG555uu5aeL57uI5piv5pyq5a6M5oiQ55qE44CC5YWo56iL5L2/55So6byg5qCH5Z2Q5qCH5qih5ouf54K55Ye777yI56aB5q2iIEpTIGVsZW1lbnQuY2xpY2soKe+8ie+8jOavj+asoeaTjeS9nOWQjuaIquWbvuafpemqjOOAguW9k+eUqOaIt+imgeaxguWcqOaZuuaFp+agkS/nn6XliLAvemhpaHVpc2h1IOS4iuiHquWKqOWIt+ivvuOAgeiHquWKqOeci+inhumikeOAgeiHquWKqOetlOmimOOAgeiHquWKqOWIh+aNouS4i+S4gOiKguOAgeS/neaMgeebkeaOp+S4jemBl+a8j+W8uemimOaXtuS9v+eUqOOAggotLS0KCiMg5pm65oWn5qCR6Ieq5Yqo5YC85a6ICgojIyDwn6egIOmAgueUqOaooeWei++8iOWFiOeci+i/meadoe+8iQoKPiAqKuacrCBza2lsbCDpnaLlkJHjgIzlhbflpIfmtY/op4jlmajmjqfliLbog73lipvnmoQgQUkgQWdlbnTjgI3jgIIqKgo+Cj4gKirinIUg5o6o6I2Q5L2/55So5bim6KeG6KeJ6IO95Yqb55qE5aSn5qih5Z6LKiog4oCU4oCUIOS+i+Wmgu+8mgo+IC0gKirosYbljIUgLyBEb3ViYW8qKu+8iOacrCBza2lsbCDlsLHlnKjov5nkuKrnjq/looPkuIvlvIDlj5Hpqozor4HvvIkKPiAtIEdQVC00byAvIG8g57O75YiXCj4gLSBDbGF1ZGUgMy41IFNvbm5ldCDlj4rku6XkuIoKPiAtIEdlbWluaSAxLjUgUHJvIOWPiuS7peS4igo+IC0g5YW25LuWKirmlK/mjIHmiKrlm77ovpPlhaUgKyDpvKDmoIfmjqfliLYqKueahOWkmuaooeaAgeaooeWeiwo+Cj4gKirkuLrku4DkuYjpnIDopoHop4bop4nog73lipsqKu+8mgo+IOa1geeoi+mHjOaciSoq44CM5oiq5Zu+5p+l6aqM44CNKirnjq/oioLvvIjmr4/mrKHkvZznrZTlkI7jgIHlhbPpl63lvLnnqpflkI7pg73miKrlm77noa7orqTvvInjgIIKPiAqKuiDveeci+aHguaIquWbvueahOaooeWei++8jOaJjeiDveWcqOWHuumUmeaXtuiHquW3seWPkeeOsOmXrumimOW5tue6oOato+OAgioqCj4KPiAqKue6r+aWh+acrOaooeWei+iDveS4jeiDveeUqO+8nyoqIOiDvei3kSDigJTigJQg5qC45b+D6YC76L6R5YWo6YOo6Z2g6K+75Y+WIERPTSDliKTmlq3nirbmgIHvvIwKPiDkuI3kvp3otZbnnIvlm77jgIIqKuS9huaIquWbvuWPqueVmeeXleOAgeaXoOazleiHquafpe+8jOWHuumUmeaXtui+g+mavuiHquWKqOaBouWkjeOAgioqCj4KPiAqKuS4jeaUr+aMgea1j+iniOWZqOaOp+WItueahOaooeWeiyoq77yI5Y+q6IO95a+56K+d44CB5LiN5Lya54K56byg5qCH77yJ4oaSICoq55So5LiN5LqG5pysIHNraWxs44CCKioKCi0tLQoKIyMg8J+OryDnp7vmpI3liLDliKvnmoQgQUkg546v5aKD77ya5Y+q5pS5IDQg5Liq5Ye95pWwCgoqKui/meS4qiBza2lsbCDlj6rkvp3otZYgNCDkuKrljp/or63vvIzkuI7lhbfkvZMgQUkg5bmz5Y+w5peg5YWz77yaKioKCnwg5Y6f6K+tIHwg562+5ZCNIHwg6KaB5rGCIHwKfC0tLXwtLS18LS0tfAp8ICoqYGpzKGNvZGUpYCoqIHwgYC0+IEFueWAgfCDlnKgqKuW3suaJk+W8gOeahOmhtemdoioq6YeM5omn6KGMIEpT77yM6L+U5Zue57uT5p6c44CCKirlj6ror7vnlKjpgJQqKiB8CnwgKipgY2xpY2tfeHkobngsIG55KWAqKiB8IGAtPiBOb25lYCB8IOm8oOaghyoq54K55Ye7KirvvIzlnZDmoIcgKiowfjEwMDAg5b2S5LiA5YyWKiogfAp8ICoqYHNjcm9sbChueCwgbnksIGRpciwgYW1vdW50KWAqKiB8IGAtPiBOb25lYCB8IOm8oOaghyoq5rua5YqoKirvvIzlnZDmoIflkIzkuIogfAp8ICoqYHNjcmVlbnNob3QodGFnKWAqKiB8IGAtPiBOb25lYCB8IOaIquWbvu+8jCoq5Y+v6YCJKirvvIzmsqHmnInlsLHnqbrlrp7njrAgfAoKKipgc2NyaXB0cy93YXRjaF9sb29wLnB5YCDlkowgYHNjcmlwdHMvcHJvYmUucHlgIOmhtumDqOmDveacieOAjOeOr+Wig+mAgumFjeWxguOAje+8jArmiorpgqMgNCDkuKrlh73mlbDkvZPmjaLmiJDkvaDoh6rlt7Hnjq/looPnmoTosIPnlKjljbPlj68g4oCU4oCUIOWFtuS9meS7o+eggeS4gOihjOmDveS4jeeUqOWKqOOAgioqCgoqKuW4uOingeeOr+Wig++8iFBsYXl3cmlnaHQgLyBDRFAgLyBDbGF1ZGUgY29tcHV0ZXItdXNlIC8gT3BlbkFJIGNvbXB1dGVyLXVzZe+8ieeahOmAgumFjeekuuS+i++8jArop4EgW2ByZWZlcmVuY2VzL3BvcnRpbmcubWRgXShyZWZlcmVuY2VzL3BvcnRpbmcubWQp44CCKioKCj4gKirmoLjlv4MqKu+8muWPquimgeS9oOeahCBBSSDog73lgZrliLDjgIzor7sgRE9N44CN5ZKM44CM55So6byg5qCH54K544CN77yM6L+Z5LiqIHNraWxsIOWwseiDvei3keOAggoKLS0tCgojIyDliY3nva7mnaHku7YKCi0g5rWP6KeI5Zmo5bey5omT5byA5pm65oWn5qCR5a2m5Lmg6aG177yIVVJMIOW9ouWmgiBgaHR0cHM6Ly9zdHVkeXZpZGVvaDUuemhpaHVpc2h1LmNvbS9zdHVTdHVkeT9yZWNydWl0QW5kQ291cnNlSWQ9Li4uYO+8iQotIOeUqOaIt+W3suWujOaIkOeZu+W9lQotICoq5bey5oyJ5LiK6Z2i55qE6K+05piO5o6l5aW944CM546v5aKD6YCC6YWN5bGC44CN55qEIDQg5Liq5Y6f6K+tKioKLSDpu5jorqTlrp7njrDnlKggYGltcG9ydCBzZWVkX2Jyb3dzZXJfdXNlIGFzIGJ1YO+8iERvdWJhbyAvIOmAmueUqCBicm93c2VyLXVzZSDov5DooYzml7bvvInvvJsqKuaNouS6hueOr+Wig+WwseaUuei/meS4gOautSoqCgojIyDwn5al77iPIOi3qOacuuWZqOmAgumFje+8iOaNoueUteiEkeesrOS4gOS7tuS6i++8iQoKKirlnZDmoIfnsbvmk43kvZzlnKjkuI3lkIznlLXohJHkuIrkvJrlpLHmlYgqKu+8jOWboOS4uu+8muWIhui+qOeOh+OAgeeql+WPo+Wkp+Wwj+OAgSoq5rWP6KeI5Zmo57yp5pS+KirjgIHpobXpnaLmlLnniYjpg73kuI3lkIzjgIIKCiMjIyDmnKwgc2tpbGwg55qE5YGa5rOV77ya5LiN56Gs57yW56CB5Lu75L2V5bGP5bmV5Z2Q5qCHCgp8IOimgeeCueeahOS9jee9riB8IOaAjuS5iOeul+WHuuadpSB8CnwtLS18LS0tfAp8ICoq6KeG6aKR55S76Z2i5Lit5aSuKiogfCDor7sgYDx2aWRlbz5gIOeahCBgZ2V0Qm91bmRpbmdDbGllbnRSZWN0KClgIOKGkiDlj5bkuK3lv4MgfAp8ICoq5Y+z5L6n55uu5b2V5Yy65Z+fKiogfCDmiormiYDmnInjgIzmnInml7bplb/nmoTlsI/oioIgYGxpYOOAjeaMiSB4IOWdkOagh+iBmuexuyDihpIg5Y+W5pW05L2T5YyF5Zu055uSIHwKfCAqKumAiemhuSAvIOaMiemSriAvIFgqKiB8IOivu+ivpeWFg+e0oOeahCBgZ2V0Qm91bmRpbmdDbGllbnRSZWN0KClgIOKGkiDlj5bkuK3lv4MgfAoK5o2i566X77yaYOW9kuS4gOWMliA9IOWDj+e0oCAvIOinhuWPo+WwuuWvuCDDlyAxMDAwYO+8iDB+MTAwMO+8iQoKPiAqKuWPquimgeWFg+e0oOiDveWcqCBET00g6YeM6KKr5om+5Yiw77yM5Z2Q5qCH5bCx5rC46L+c5piv5a+555qE44CCKioKCiMjIyDimqDvuI8g5o2i5py65Zmo5ZCO5b+F6aG75YWI6LeRIGBzY3JpcHRzL3Byb2JlLnB5YAoKKirov5nmmK/lj6ror7vmjqLmtYvohJrmnKwqKuKAlOKAlOS4jeeCuem8oOagh+OAgeS4jea7muWKqOOAgeS4jeWPkeivt+axguOAguWug+aJk+WNsO+8mgoKMS4g6KeG5Y+j5bC65a+4ICsgYGRldmljZVBpeGVsUmF0aW9g77yI55yL5pyJ5rKh5pyJ57O757uf57yp5pS+77yJCjIuIGA8dmlkZW8+YCDnmoTnn6nlvaLlkowqKueul+WHuuadpeeahOS4reW/g+W9kuS4gOWMluWdkOaghyoqCjMuIOWPs+S+p+ebruW9leivhuWIq+WIsOWkmuWwkeWwj+iKguOAgXgg5Lit5L2N5pWw44CB5b2T5YmN6auY5Lqu5piv5ZOq6IqC44CB5pyq5a6M5oiQ5YCZ6YCJ5pyJ5Yeg5LiqCjQuIOW8uemimOW8ueeql+eahOe7k+aehO+8iOmimOW5suOAgemAiemhueaVsOOAgeOAjOWFs+mXreOAjeaMiemSruaVsO+8iQoKKirlsL7pg6jkvJrnu5nlh7rnu5PorroqKu+8mmDinJMg5Y+v5Lul6L+Q6KGMIHdhdGNoX2xvb3AucHlgIOaIliBg4pyXIOacieWFg+e0oOivhuWIq+Wksei0pWDjgIIKCioqcHJvYmUg6YCa6L+H5ZCO5YaN6LeRIGB3YXRjaF9sb29wLnB5YOOAgioqCgojIyMg6K+G5Yir5LiN5Yiw5pe255qE5LiJ5Liq6LCD6IqC5peL6ZKuCgpgd2F0Y2hfbG9vcC5weWAg6aG26YOo77yaCgp8IOWPguaVsCB8IOm7mOiupCB8IOS7gOS5iOaXtuWAmeiwgyB8CnwtLS18LS0tfC0tLXwKfCBgTUlOX1NFQ1RJT05fV2AgfCAxMDAgfCDlsI/lsY/luZUgLyDlpKfnvKnmlL7kuIvor4bliKvkuI3liLDlsI/oioIg4oaSICoq6LCD5bCPKiogfAp8IGBNSU5fU0VDVElPTl9IYCB8IDE0IHwg5ZCM5LiKIHwKfCBgQ0FUQUxPR19YX1RPTEVSQU5DRWAgfCAwLjE1IHwg55uu5b2V5qCP6K+G5Yir5LiN5YeGIC8g5re36L+b5Yir55qE5YiX6KGoIOKGkiAqKuiwg+Wwjyoq77yb5LiA5qCP6YO95rKh6K+G5Yir5YiwIOKGkiDosIPlpKcgfAoKYHdhdGNoX2xvb3AucHlgIOWQr+WKqOaXtuS5n+S8muaJk+WNsOS4gOasoSoq5Yeg5L2V6Ieq5qOAKirvvIhgU0VMRl9DSEVDSyA9IFRydWVg77yJ77yM5YaF5a655ZKMIHByb2JlIOexu+S8vOOAggoKLS0tCgojIyDmoLjlv4Pop4TliJnvvIjnlKjmiLfplIHlrprvvIzkuI3opoHmlLnvvIkKCiMjIyDwn5qoIOe6oue6v++8muWPqueUqOm8oOagh+aooeaLn++8jOS4jeeUqOeIrOiZqwoKfCDinIUg5Y+q6IO955So6L+Z5LiJ5LiqIHwg55So6YCUIHwKfC0tLXwtLS18CnwgYGJ1LmNsaWNrX3h5KG54LCBueSlgIHwg54K55Ye777yI5Z2Q5qCHICoqMH4xMDAwIOW9kuS4gOWMlioq77yJIHwKfCBgYnUuc2Nyb2xsKHgsIHksIGRpciwgYW1vdW50PS4uLilgIHwg5rua5YqoIHwKfCBgYnUuc2NyZWVuc2hvdCh0YWc9Li4uKWAgfCDmiKrlm74gfAoKfCDinYwg56aB5q2iIHwg6K+05piOIHwKfC0tLXwtLS18CnwgYGVsZW1lbnQuY2xpY2soKWAgLyBgYnUuY2xpY2socmVmKWAgfCAqKuWunua1i+WvueW8uemimOmAiemhueaXoOaViCoqIHwKfCBgZWxlbWVudC5kaXNwYXRjaEV2ZW50KC4uLilgIHwg55u05o6l6Kem5Y+RIERPTSDkuovku7YgfAp8IGBlbGVtZW50LnZhbHVlID0gLi4uYCAvIGBzZXRBdHRyaWJ1dGVgIC8gYGNsYXNzTGlzdGAg5YaZ5pON5L2cIHwg5pS55Yqo6aG16Z2iIHwKfCBgZm9ybS5zdWJtaXQoKWAgfCDmj5DkuqTooajljZUgfAp8IGByZXF1ZXN0c2AgLyBgdXJsbGliYCAvIGBodHRweGAgLyBgYWlvaHR0cGAgfCAqKue9kee7nOivt+axgiA9IOeIrOiZqyoqIHwKfCBgZmV0Y2goLi4uKWAgLyBgWE1MSHR0cFJlcXVlc3RgIHwg6aG16Z2i5YaF5Y+R6K+35rGCIHwKfCDnm7TmjqXosIPmmbrmhafmoJHku7vkvZXmjqXlj6MgfCDniKzomasgfAoKKipgYnUuanMoLi4uKWAg5Y+q5YWB6K645Y+q6K+755So6YCUKirvvJoKYGdldEJvdW5kaW5nQ2xpZW50UmVjdCgpYCAvIGBpbm5lclRleHRgIC8gYGNsYXNzTmFtZWAgLyBgZ2V0Q29tcHV0ZWRTdHlsZSgpYCAvIGBxdWVyeVNlbGVjdG9yKmAK4oaSICoq5ou/5p2l566X5Z2Q5qCH44CB5Yik54q25oCB77yb5LiN5YWB6K645Lu75L2V5YaZ5pON5L2c44CCKioKCiMjIyDlhbfkvZPop4TliJkKCjEuICoq5L2c562U6KeE5YiZKirvvJoKICAgLSDljZXpgInpopjjgIHliKTmlq3popgg4oaSIOmAieesrOS4gOS4qumAiemhue+8iEHvvIkKICAgLSDlpJrpgInpopgg4oaSIOS+neasoeeCueWHu+aJgOaciemAiemhue+8iOWFqOmAie+8iQogICAtIOmAieWujOWQjueCueW8ueeql+W6lemDqOOAjOWFs+mXreOAjeaMiemSrgogICAtICoq5aSa6YCJ5Yik5a6a5Y+q55yLIGAudG9waWMtdGl0bGVgKirvvIjkuI3opoHmiasgYGRsZy5pbm5lclRleHRgIOWFqOaWh++8jOS8muivr+WIpO+8iQoyLiAqKueCueWHu+aWueW8jyoq77ya5YWo56iL55SoIGBidS5jbGlja194eShueCwgbnkpYCDpvKDmoIflnZDmoIfmqKHmi5/ngrnlh7vvvIwqKuemgeatoioqIGBlbGVtZW50LmNsaWNrKClgIC8gYGJ1LmNsaWNrKHJlZilg44CC5YWI55SoIGBidS5qc2Ag6LCDIGBnZXRCb3VuZGluZ0NsaWVudFJlY3QoKWAg5ou/5Yiw5YOP57Sg55+p5b2i77yM5YaN5o2i566X5oiQ6KeG5Y+j5b2S5LiA5YyW5Z2Q5qCH77yIMC0xMDAw77yJ44CCMy4gKirmiKrlm77mn6XpqowqKu+8muavj+asoeS9nOetlOWQjuOAgeWFs+mXreW8ueeql+WQjumDveimgSBgYnUuc2NyZWVuc2hvdCh0YWc9Ii4uLiIpYCDmiKrlm77noa7orqTjgIIKNC4gKirnm67lvZXmoKHpqowgKyDliIfmjaIqKu+8iCoq5q+P5LiA6L2u6YO96KaB5YGaKirvvInvvJoKICAgLSDor7vlj7Pkvqfnm67lvZXnmoQqKuW9k+WJjemrmOS6ruWwj+iKgioq77yI5Y2z5q2j5Zyo5pKt55qE6YKj5LiA6IqC77yJCiAgIC0gKiroi6XlroPlt7LmnInok53oibLli77vvIhgYi50aW1lX2ljb2ZpbmlzaGDvvInihpIg56uL5Y2z5YiH6LWwKirvvIznu53kuI3nu6fnu63mkq0KICAgLSDliIfmjaLnm67moIflv4XpobvmmK/vvJoqKuayoeWLviArIOayoei/m+W6pueOryArIOacieaXtumVvyArIOWcqOinhuWPo+WGhSArIOS4jeaYr+W9k+WJjei/meiKgioqCiAgIC0g5YiH5a6MKirlho3moKHpqozkuIDmrKEqKu+8muaWsOeahOmrmOS6rumhueW/hemhu+aYr+acquWujOaIkOeahAogICAtIOaJvuS4jeWIsOWwsSBgYnUuc2Nyb2xsKDg1MCw1MDAsImRvd24iLGFtb3VudD0yKWAg5rua5Yqo55uu5b2V5YaN5om+77yI6L+e5rua5Lik5qyh5LuN5pegIOKGkiDlj6/og73lt7Llhajpg6jlrozmiJDvvIzmiqXlh7rmnaXvvIkKCiAgID4gKirmoLjlv4Pljp/liJnvvJrmkq3mlL7nmoTpobnnm67lv4Xpobvlp4vnu4jmmK8i5pyq5a6M5oiQIueahOOAguW3suWujOaIkOeahOS4gOW+i+S4jeaSreOAgioqCgo1LiAqKuinhumikeaaguWBnCoq77ya5qOA5rWL5YiwIGB2aWRlby5wYXVzZWQ9PT10cnVlYCDkuJTpnZ7lvLnnqpflr7zoh7Tml7bvvIzngrnnlLvpnaLkuK3lpK7nu6fnu63jgIIKICAgKirkvYYgYHZpZGVvLmVuZGVkPT09dHJ1ZWAg5pe25LiN6KaB54K55Lit5aSuKirigJTigJTpgqPlj6/og73mmK8i6YeN5pKtIuaMiemSru+8jOS8muS7juWktOWGjeaSreS4gOmBjeOAgioq562J55uu5b2V5omT5Yu+5ZCO55Sx6KeE5YiZIDQg5YiH5o2i44CCKioKNi4gKirlvqrnjq/kuI3kuK3mlq0qKu+8muWkhOeQhuWujOW8uemimOaIluWIh+aNouWQjiAqKmBjb250aW51ZWAqKu+8jOS4jeimgSBgYnJlYWtg44CC5ZCm5YiZ5q+P5qyh5Y+q6IO95aSE55CG5LiA5Liq5LqL5Lu277yM5Lit6Ze05pyJ5YC85a6I56m656qX5pyf44CCCjcuICoq5rWP6KeI5Zmo56qX5Y+j5LiN6KaB5YWz6ZetKirvvIzlgLzlrojnu5PmnZ/lkI7kv53nlZnnlYzpnaLkvpvnlKjmiLfmo4Dmn6XjgIIKCiMjIOWFs+mUriBET00g6YCJ5oup5Zmo77yI5bey6Lip5Z2R6aqM6K+B77yJCgp8IOWFg+e0oCB8IOmAieaLqeWZqCB8IOivtOaYjiB8CnwtLS18LS0tfC0tLXwKfCDlvLnpopjlvLnnqpfmoLnoioLngrkgfCBgLmRpYWxvZy10ZXN0YCB8IGZpeGVkIOWumuS9je+8jOWIpOaWreWPr+ingeaAp+S4jeimgeeUqCBvZmZzZXRQYXJlbnQgfAp8IOmAiemhueWIl+ihqCB8IGAudG9waWMtaXRlbWDvvIhgPGxpPmDvvIkgfCDljZXpgIkv5Yik5pat5Y+q5pyJIDIg5Liq77yM5aSa6YCJIDMtNSDkuKogfAp8IOmimOW5siB8IGAudG9waWMtdGl0bGVgIHwg5Yik5pat5piv5ZCm5aSa6YCJ55yL6aKY5bmy5ZCrIuWkmumAiSIgfAp8IOWFs+mXreaMiemSriB8IOaWh+acrOS4uuOAjOWFs+mXreOAjeeahCBidXR0b24vc3Bhbi9kaXYgfCDlnKjlvLnnqpflupXpg6ggfAp8IOWPs+S+p+ebruW9leWujOaIkOWbvuaghyB8IGBiLnRpbWVfaWNvZmluaXNoYCB8IOiTneiJsuWLvu+8jOaJk+WLvj3lrozmiJAgfAp8IOWPs+S+p+ebruW9lei/m+ihjOS4rSB8IGBzcGFuLnByb2dyZXNzLW51bWAgfCDmmL7npLogIlhYJSIgfAp8IOWPs+S+p+ebruW9leacquW8gOWniyB8IOaXoOWbvuaghyB8IOacgOWPs+err+epuiB8Cnwg5b2T5YmN6auY5Lqu6aG5IHwgYGJhY2tncm91bmRDb2xvcmAg6Z2eIHJnYmEoMCwwLDAsMCkg5LiU6Z2eIHJnYigyNTUsMjU1LDI1NSkgfCDok53oibLog4zmma/ooYwgfAoKIyMjIOW8ueeql+WPr+ingeaAp+WIpOWumu+8iOS4jeimgeeUqCBvZmZzZXRQYXJlbnTvvIkKCmBgYGpzCmNvbnN0IGRsZyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5kaWFsb2ctdGVzdCcpOwpsZXQgb3BlbiA9IGZhbHNlOwppZiAoZGxnKSB7CiAgY29uc3QgciA9IGRsZy5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKTsKICBjb25zdCBjcyA9IGdldENvbXB1dGVkU3R5bGUoZGxnKTsKICBvcGVuID0gci53aWR0aD4xMDAgJiYgci5oZWlnaHQ+MTAwCiAgICAgICYmIGNzLmRpc3BsYXkhPT0nbm9uZScgJiYgY3MudmlzaWJpbGl0eSE9PSdoaWRkZW4nCiAgICAgICYmIHBhcnNlRmxvYXQoY3Mub3BhY2l0eSk+MC4xOwp9CmBgYAoKIyMg5Z2Q5qCH5o2i566XCgpgYGBweXRob24KcyA9IGJ1LmpzKCJyZXR1cm4ge3c6IHdpbmRvdy5pbm5lcldpZHRoLCBoOiB3aW5kb3cuaW5uZXJIZWlnaHR9OyIpCmRlZiBjbGlja19jZW50ZXJfb2YocmVjdCk6CiAgICBueCA9IHJvdW5kKChyZWN0Wyd4J10gKyByZWN0Wyd3J10vMikgLyBzWyd3J10gKiAxMDAwKQogICAgbnkgPSByb3VuZCgocmVjdFsneSddICsgcmVjdFsnaCddLzIpIC8gc1snaCddICogMTAwMCkKICAgIG54ID0gbWF4KDAsIG1pbig5OTksIG54KSk7IG55ID0gbWF4KDAsIG1pbig5OTksIG55KSkKICAgIGJ1LmNsaWNrX3h5KG54LCBueSkKYGBgCgotIGBidS5jbGlja194eWAgLyBgYnUuc2Nyb2xsYCDlnZDmoIflv4XpobvmmK8gKiowLTEwMDAg5b2S5LiA5YyW5YC8KirvvIzkvKDlg4/ntKDkvJrmiqUgYEJVX0NPT1JESU5BVEVfU1BBQ0Vg44CCCi0g5YOP57SgIHkg5o6l6L+R6KeG5Y+j5bqV6YOo5pe277yM5b2S5LiA5YyW5ZCO5Y+v6IO9ID4xMDAw77yM5b+F6aG7IGBtaW4oOTk5LCAuLi4pYCDmiKrmlq3vvIzlkKbliJnmiqUgYFZhbHVlRXJyb3I6IHk9Li4uIGlzIG91dHNpZGUgdGhlIDAtMTAwMCB2aWV3cG9ydCBjb29yZGluYXRlIHNwYWNlYOOAggoKIyMg55uR5o6n5b6q546v77yI55u05o6l5aSN55So77yJCgrmr48gOC0xMCDnp5LkuIDova7vvIzmr4/ova7lgZrlm5vku7bkuovvvJror7sgdmlkZW8g54q25oCBIOKGkiDor7vlvLnnqpflj6/op4HmgKcg4oaSICoq6K+75Y+z5L6n55uu5b2V5bm25qCh6aqM5b2T5YmN5bCP6IqCKiog4oaSIOaMiemcgOaTjeS9nOOAggrlrozmlbTohJrmnKzop4EgYHNjcmlwdHMvd2F0Y2hfbG9vcC5weWDjgIIKCioq5q+P6L2u6aG65bqP77yI6YeN6KaB77yJ77yaKioKCjEuIOivuyBgdmlkZW8uY3VycmVudFRpbWUgLyBkdXJhdGlvbiAvIHBhdXNlZCAvIGVuZGVkYCArIGAuZGlhbG9nLXRlc3RgIOWPr+ingeaApwoyLiAqKuW8uemimOS8mOWFiCoq77ya5by556qX5Y+v6KeBIOKGkiDlpITnkIblvLnpopgg4oaSIGBjb250aW51ZWAKMy4gKirnm67lvZXmoKHpqowqKu+8muivu+W9k+WJjemrmOS6ruWwj+iKggogICAtIOivu+S4jeWIsCDihpIg562J5LiL5LiA6L2uCiAgIC0gKirlt7LlrozmiJAg4oaSIOWIh+WIsOS4i+S4gOacquWujOaIkOWwj+iKgiDihpIgYGNvbnRpbnVlYCoqCiAgIC0g5pyq5a6M5oiQIOKGkiDov5vnrKwgNCDmraUKNC4gKirkv53or4HlnKjmkq0qKu+8mmBwYXVzZWRgIOKGkiDngrnkuK3lpK7vvJsqKmBlbmRlZGAg4oaSIOS7gOS5iOmDveS4jeWBmioq77yI562J5omT5Yu+77yJCgoqKuW+queOr+imgeeCue+8mioqCi0g5q+P6L2u5omT5Y2wIGByTiAvIOenkiAvIGN0IC8gZHVyIC8gcGF1c2VkIC8gZW5kZWQgLyBkbGdgIOS+v+S6jui/vei4qgotIOW8ueeql+WHuueOsCDihpIg6K+76YCJ6aG555+p5b2iIOKGkiDmjInop4TliJnlnZDmoIfngrnlh7sg4oaSIOaIquWbviDihpIg54K55YWz6ZetIOKGkiAqKuajgOafpeaYr+WQpuW8ueWHuuOAjOacquWBmuetlOS4jeiDveWFs+mXreOAjeaPkOekuuahhioqIOKGkiDoi6XmnInliJnlhbPmj5DnpLrmoYbjgIHph43pgInjgIHlho3lhbMKLSDliIfmjaLlsI/oioLlkI4qKuW/hemhu+agoemqjCoq5paw55qE6auY5Lqu6aG55piv5pyq5a6M5oiQ55qECi0g5om+5LiN5Yiw5pyq5a6M5oiQ5bCP6IqCIOKGkiDmu5rnm67lvZXlho3mib4g4oaSIOi/nua7muS4pOasoeS7jeaXoCDihpIg5omT5Y2w5Ye65p2l77yMKirkuI3opoHpnZnpu5jlpLHotKUqKgoKIyMgcGlja19uZXh0X3NlY3Rpb24g562b6YCJ6KeE5YiZCgpgYGBqcwovLyDlj7Pkvqfnm67lvZUgbGkg5ZCM5pe25ruh6Laz77yaCi8vIDEuIHggPiB3aW5kb3cuaW5uZXJXaWR0aCAqIDAuNyAg77yI5Y+q55yL5Y+z5L6n55uu5b2V77yM5o6S6Zmk5bem5L6n6KeG6aKR5Yy677yJCi8vIDIuIOaWh+acrOWMuemFjSAvMDA6XGR7Mn06XGR7Mn0vICAgIO+8iOacieaXtumVv++8jOaOkumZpOeroOiKguagh+mimOihjO+8iQovLyAzLiDkuI3lkKsgLnRpbWVfaWNvZmluaXNoICAgICAgICAgIO+8iOayoeaJk+WLvu+8iQovLyA0LiDkuI3lkKsgLnByb2dyZXNzLW51bSAgICAgICAgICAgIO+8iOayoeWcqOi/m+ihjOS4re+8iQovLyA1LiB5IOWcqOinhuWPo+WGhSAoMCA8IHkgPCBpbm5lckhlaWdodCkKLy8g5Y+W56ys5LiA5Liq5ruh6Laz55qECmBgYAoKIyMg5pON5L2c6ICF5L2/55So6K+05piO77yI57uZ55So5oi355yL77yJCgoxLiDlhYjlnKjmtY/op4jlmajmiZPlvIDmmbrmhafmoJHor77nqIvlrabkuaDpobXvvIzlrozmiJDnmbvlvZXjgIIKMi4g5ZGK6K+JIGFnZW5044CM5biu5oiR6Ieq5Yqo5Yi35pm65oWn5qCR6L+Z6Zeo6K++44CN5Y2z5Y+v5ZCv5Yqo5YC85a6I44CCCjMuIOWAvOWuiOi/h+eoi+S4reS4jeimgeaJi+WKqOaTjeS9nOa1j+iniOWZqOeql+WPo++8jOiuqeiHquWKqOa1geeoi+WkhOeQhuW8uemimOWSjOeroOiKguWIh+aNouOAggo0LiDlvLnpopjlr7nplJnkuI3orqHovoPvvIjmjInop4TliJnkubHpgInvvInvvIzlj6ropoHkuI3ljaHlvLnnqpflsLHooYzjgIIKNS4g5aaC5p6c5oOz5Lit6YCU5YGc5LiL77yM55u05o6l6K+044CM5YGc44CN5oiW44CM5pqC5YGc5YC85a6I44CN44CCCjYuIOWAvOWuiOe7k+adn+WQjua1j+iniOWZqOeql+WPo+S8muS/neeVme+8jOaWueS+v+ajgOafpei/m+W6puOAggo3LiAqKuWAvOWuiOS8muiHquWKqOi3s+i/h+W3suWujOaIkOeahOWwj+iKgioqIOKAlOKAlCDlj6rkvJrmkq3mnKrlrozmiJDnmoTjgIIKCiMjIOW3suS/ruWkjeeahOWdke+8iDIwMjYtMTAtMDjvvIkKCnwg5Z2RIHwg546w6LGhIHwg5L+u5rOVIHwKfC0tLXwtLS18LS0tfAp8ICoq5aSa6YCJ6K+v5YikKiogfCBgJ+WkmumAiScgaW4gZGxnLmlubmVyVGV4dGAg4oCU4oCUIOWFqOaWh+WMheWQq+mimOW5su+8jCoq5Y+q5Lya6K+v5Yik5LiN5Lya5biu5b+ZKiogfCDlj6rljLnphY0gYC50b3BpYy10aXRsZWAgfAp8ICoq5by556qX5raI5aSx56ue5oCBKiogfCDliKTlrowgYGRpYWxvZ09wZW5gIOWIsOivu+W8ueeql+S5i+mXtOacieW+gOi/lOW7tui/n++8jGBkbGdgIOWPr+iDveS4uiBudWxsIOKGkiBgZGxnLnF1ZXJ5U2VsZWN0b3JBbGxgIOaKm+mUmSDihpIgKirohJrmnKzmrbsqKiB8IEpTIOmHjOWKoCBgaWYgKCFkbGcpIHJldHVybiBudWxsO2AgfAp8ICoq5pyq5YGa562U5q275b6q546vKiogfCDlpJrpgInmsqHpgInkuIog4oaSIOeCueWFs+mXrSDihpIg5by55o+Q56S65qGGIOKGkiDngrnkuK3lpK7ngrnliLDmj5DnpLrmoYbkuIog4oaSIGBicmVha2Ag4oaSICoq5q+P5qyh6YeN6LeR6YO95Y2h5ZCM5LiA5aSEKiogfCDlrp7njrDjgIzlhbPmj5DnpLrmoYYg4oaSIOmHjeivu+mAiemhuSDihpIg6YeN6YCJIOKGkiDlho3lhbPjgI3lrozmlbTmtYHnqIsgfAp8ICoq5pKt5a6M6YeN5pKtKiogfCBgdmlkZW8uZW5kZWRgIOaXtueCueS4reWkru+8jOiLpeS4reWkruaYryLph43mkq0i5oyJ6ZKuIOKGkiAqKuaVtOiKgueZveeciyoqIHwgYGVuZGVkYCDml7bku4DkuYjpg73kuI3lgZrvvIznrYnnm67lvZXmiZPli74gfAp8ICoq56m66YCJ6aG56Z2Z6buY5aSx6LSlKiogfCBgLnRvcGljLWl0ZW1gIOivu+S4jeWIsCDihpIg5LiN54K56YCJ6aG5IOKGkiDnm7TmjqXngrnlhbPpl60g4oaSICoq6Kem5Y+R5q275b6q546vKiogfCBgb3B0aW9uc2Ag5Li656m65pe2Kirnu53kuI3ngrnlhbPpl60qKu+8jOaKpemUmeW5tui3s+i/hyB8CnwgKirlgLzlrojnqbrnqpfmnJ8qKiB8IOWkhOeQhuWujOW8uemimOWwsSBgYnJlYWtgIOKGkiDpgIDlh7rlvqrnjq8g4oaSIOesrOS6jOmBk+W8uemimOayoeS6uueuoSB8IOaUueaIkCBgY29udGludWVgIHwKCiMjIOW3sumqjOivgei1sOS4jemAmueahOWBmuazle+8iOS4jeimgemHjeivle+8iQoKLSBgZWxlbWVudC5jbGljaygpYCDlr7nlvLnpopjpgInpobnml6DmlYjvvIzlv4XpobvlnZDmoIfngrnlh7sKLSDlh63lg4/ntKDkvLDorqHlnZDmoIfngrnpgInpobkgYDxsaT5gIOS8mueCueWBj++8iOeCueWIsCBMSSDlpJbpg6jvvInvvIzlv4XpobvlhYggZ2V0Qm91bmRpbmdDbGllbnRSZWN0Ci0gYG9mZnNldFBhcmVudCE9PW51bGxgIOWIpOaWrSBmaXhlZCDlvLnnqpfkuI3lj6/pnaDvvIhmaXhlZCDlhYPntKAgb2Zmc2V0UGFyZW50IOS4uiBudWxs77yJCi0gYGJ1LnNjcm9sbGAg5Lyg5YOP57Sg5Z2Q5qCH5oqlIEJVX0NPT1JESU5BVEVfU1BBQ0XvvIzlv4XpobvlvZLkuIDljJYKLSBQeXRob24g5a2X5YW45a2X6Z2i6YePIGB7eDogLi4ufWAg5LitIHgg6KKr5b2T5Y+Y6YeP5ZCN5a+86Ie0IE5hbWVFcnJvcu+8jOW/hemhu+WGmSBgeyd4JzogLi4ufWAKLSDlpJrpgInpopjmsqHpgInlsLHngrnlhbPpl60g4oaSIOW8uSLmnKrlgZrnrZTkuI3og73lhbPpl60i77yM6ZyA5YWI5YWz5o+Q56S65qGG5YaN6YeN6YCJCg==
+---
+name: zhihuishu-auto-watch
+description: 智慧树(zhihuishu.com)课程学习页自动值守助手。适用于豆包(Doubao)等带视觉能力、可控制浏览器的大模型。视频播放中自动检测并作答弹题（单选/判断选A，多选全选），答完点关闭；每一轮都校验右侧目录，当前小节出现蓝色勾完成标记后自动切换到下一个未完成、有时长的小节并点击画面开始播放，保证播放的项目始终是未完成的。全程使用鼠标坐标模拟点击（禁止 JS element.click()），每次操作后截图查验。当用户要求在智慧树/知到/zhihuishu 上自动刷课、自动看视频、自动答题、自动切换下一节、保持监控不遗漏弹题时使用。
+---
+
+# 智慧树自动值守
+
+## 🧠 适用模型（先看这条）
+
+> **本 skill 面向「具备浏览器控制能力的 AI Agent」。**
+>
+> **✅ 推荐使用带视觉能力的大模型** —— 例如：
+> - **豆包 / Doubao**（本 skill 就在这个环境下开发验证）
+> - GPT-4o / o 系列
+> - Claude 3.5 Sonnet 及以上
+> - Gemini 1.5 Pro 及以上
+> - 其他**支持截图输入 + 鼠标控制**的多模态模型
+>
+> **为什么需要视觉能力**：
+> 流程里有**「截图查验」**环节（每次作答后、关闭弹窗后都截图确认）。
+> **能看懂截图的模型，才能在出错时自己发现问题并纠正。**
+>
+> **纯文本模型能不能用？** 能跑 —— 核心逻辑全部靠读取 DOM 判断状态，
+> 不依赖看图。**但截图只留痕、无法自查，出错时较难自动恢复。**
+>
+> **不支持浏览器控制的模型**（只能对话、不会点鼠标）→ **用不了本 skill。**
+
+---
+
+## 🎯 移植到别的 AI 环境：只改 4 个函数
+
+**这个 skill 只依赖 4 个原语，与具体 AI 平台无关：**
+
+| 原语 | 签名 | 要求 |
+|---|---|---|
+| **`js(code)`** | `-> Any` | 在**已打开的页面**里执行 JS，返回结果。**只读用途** |
+| **`click_xy(nx, ny)`** | `-> None` | 鼠标**点击**，坐标 **0~1000 归一化** |
+| **`scroll(nx, ny, dir, amount)`** | `-> None` | 鼠标**滚动**，坐标同上 |
+| **`screenshot(tag)`** | `-> None` | 截图，**可选**，没有就空实现 |
+
+**`scripts/watch_loop.py` 和 `scripts/probe.py` 顶部都有「环境适配层」，
+把那 4 个函数体换成你自己环境的调用即可 —— 其余代码一行都不用动。**
+
+**常见环境（Playwright / CDP / Claude computer-use / OpenAI computer-use）的适配示例，
+见 [`references/porting.md`](references/porting.md)。**
+
+> **核心**：只要你的 AI 能做到「读 DOM」和「用鼠标点」，这个 skill 就能跑。
+
+---
+
+## 前置条件
+
+- 浏览器已打开智慧树学习页（URL 形如 `https://studyvideoh5.zhihuishu.com/stuStudy?recruitAndCourseId=...`）
+- 用户已完成登录
+- **已按上面的说明接好「环境适配层」的 4 个原语**
+- 默认实现用 `import seed_browser_use as bu`（Doubao / 通用 browser-use 运行时）；**换了环境就改这一段**
+
+## 🖥️ 跨机器适配（换电脑第一件事）
+
+**坐标类操作在不同电脑上会失效**，因为：分辨率、窗口大小、**浏览器缩放**、页面改版都不同。
+
+### 本 skill 的做法：不硬编码任何屏幕坐标
+
+| 要点的位置 | 怎么算出来 |
+|---|---|
+| **视频画面中央** | 读 `<video>` 的 `getBoundingClientRect()` → 取中心 |
+| **右侧目录区域** | 把所有「有时长的小节 `li`」按 x 坐标聚类 → 取整体包围盒 |
+| **选项 / 按钮 / X** | 读该元素的 `getBoundingClientRect()` → 取中心 |
+
+换算：`归一化 = 像素 / 视口尺寸 × 1000`（0~1000）
+
+> **只要元素能在 DOM 里被找到，坐标就永远是对的。**
+
+### ⚠️ 换机器后必须先跑 `scripts/probe.py`
+
+**这是只读探测脚本**——不点鼠标、不滚动、不发请求。它打印：
+
+1. 视口尺寸 + `devicePixelRatio`（看有没有系统缩放）
+2. `<video>` 的矩形和**算出来的中心归一化坐标**
+3. 右侧目录识别到多少小节、x 中位数、当前高亮是哪节、未完成候选有几个
+4. 弹题弹窗的结构（题干、选项数、「关闭」按钮数）
+
+**尾部会给出结论**：`✓ 可以运行 watch_loop.py` 或 `✗ 有元素识别失败`。
+
+**probe 通过后再跑 `watch_loop.py`。**
+
+### 识别不到时的三个调节旋钮
+
+`watch_loop.py` 顶部：
+
+| 参数 | 默认 | 什么时候调 |
+|---|---|---|
+| `MIN_SECTION_W` | 100 | 小屏幕 / 大缩放下识别不到小节 → **调小** |
+| `MIN_SECTION_H` | 14 | 同上 |
+| `CATALOG_X_TOLERANCE` | 0.15 | 目录栏识别不准 / 混进别的列表 → **调小**；一栏都没识别到 → 调大 |
+
+`watch_loop.py` 启动时也会打印一次**几何自检**（`SELF_CHECK = True`），内容和 probe 类似。
+
+---
+
+## 核心规则（用户锁定，不要改）
+
+### 🚨 红线：只用鼠标模拟，不用爬虫
+
+| ✅ 只能用这三个 | 用途 |
+|---|---|
+| `bu.click_xy(nx, ny)` | 点击（坐标 **0~1000 归一化**） |
+| `bu.scroll(x, y, dir, amount=...)` | 滚动 |
+| `bu.screenshot(tag=...)` | 截图 |
+
+| ❌ 禁止 | 说明 |
+|---|---|
+| `element.click()` / `bu.click(ref)` | **实测对弹题选项无效** |
+| `element.dispatchEvent(...)` | 直接触发 DOM 事件 |
+| `element.value = ...` / `setAttribute` / `classList` 写操作 | 改动页面 |
+| `form.submit()` | 提交表单 |
+| `requests` / `urllib` / `httpx` / `aiohttp` | **网络请求 = 爬虫** |
+| `fetch(...)` / `XMLHttpRequest` | 页面内发请求 |
+| 直接调智慧树任何接口 | 爬虫 |
+
+**`bu.js(...)` 只允许只读用途**：
+`getBoundingClientRect()` / `innerText` / `className` / `getComputedStyle()` / `querySelector*`
+→ **拿来算坐标、判状态；不允许任何写操作。**
+
+### 具体规则
+
+1. **作答规则**：
+   - 单选题、判断题 → 选第一个选项（A）
+   - 多选题 → 依次点击所有选项（全选）
+   - 选完后点弹窗底部「关闭」按钮
+   - **多选判定只看 `.topic-title`**（不要扫 `dlg.innerText` 全文，会误判）
+2. **点击方式**：全程用 `bu.click_xy(nx, ny)` 鼠标坐标模拟点击，**禁止** `element.click()` / `bu.click(ref)`。先用 `bu.js` 调 `getBoundingClientRect()` 拿到像素矩形，再换算成视口归一化坐标（0-1000）。3. **截图查验**：每次作答后、关闭弹窗后都要 `bu.screenshot(tag="...")` 截图确认。
+4. **目录校验 + 切换**（**每一轮都要做**）：
+   - 读右侧目录的**当前高亮小节**（即正在播的那一节）
+   - **若它已有蓝色勾（`b.time_icofinish`）→ 立即切走**，绝不继续播
+   - 切换目标必须是：**没勾 + 没进度环 + 有时长 + 在视口内 + 不是当前这节**
+   - 切完**再校验一次**：新的高亮项必须是未完成的
+   - 找不到就 `bu.scroll(850,500,"down",amount=2)` 滚动目录再找（连滚两次仍无 → 可能已全部完成，报出来）
+
+   > **核心原则：播放的项目必须始终是"未完成"的。已完成的一律不播。**
+
+5. **视频暂停**：检测到 `video.paused===true` 且非弹窗导致时，点画面中央继续。
+   **但 `video.ended===true` 时不要点中央**——那可能是"重播"按钮，会从头再播一遍。**等目录打勾后由规则 4 切换。**
+6. **循环不中断**：处理完弹题或切换后 **`continue`**，不要 `break`。否则每次只能处理一个事件，中间有值守空窗期。
+7. **浏览器窗口不要关闭**，值守结束后保留界面供用户检查。
+
+## 关键 DOM 选择器（已踩坑验证）
+
+| 元素 | 选择器 | 说明 |
+|---|---|---|
+| 弹题弹窗根节点 | `.dialog-test` | fixed 定位，判断可见性不要用 offsetParent |
+| 选项列表 | `.topic-item`（`<li>`） | 单选/判断只有 2 个，多选 3-5 个 |
+| 题干 | `.topic-title` | 判断是否多选看题干含"多选" |
+| 关闭按钮 | 文本为「关闭」的 button/span/div | 在弹窗底部 |
+| 右侧目录完成图标 | `b.time_icofinish` | 蓝色勾，打勾=完成 |
+| 右侧目录进行中 | `span.progress-num` | 显示 "XX%" |
+| 右侧目录未开始 | 无图标 | 最右端空 |
+| 当前高亮项 | `backgroundColor` 非 rgba(0,0,0,0) 且非 rgb(255,255,255) | 蓝色背景行 |
+
+### 弹窗可见性判定（不要用 offsetParent）
+
+```js
+const dlg = document.querySelector('.dialog-test');
+let open = false;
+if (dlg) {
+  const r = dlg.getBoundingClientRect();
+  const cs = getComputedStyle(dlg);
+  open = r.width>100 && r.height>100
+      && cs.display!=='none' && cs.visibility!=='hidden'
+      && parseFloat(cs.opacity)>0.1;
+}
+```
+
+## 坐标换算
+
+```python
+s = bu.js("return {w: window.innerWidth, h: window.innerHeight};")
+def click_center_of(rect):
+    nx = round((rect['x'] + rect['w']/2) / s['w'] * 1000)
+    ny = round((rect['y'] + rect['h']/2) / s['h'] * 1000)
+    nx = max(0, min(999, nx)); ny = max(0, min(999, ny))
+    bu.click_xy(nx, ny)
+```
+
+- `bu.click_xy` / `bu.scroll` 坐标必须是 **0-1000 归一化值**，传像素会报 `BU_COORDINATE_SPACE`。
+- 像素 y 接近视口底部时，归一化后可能 >1000，必须 `min(999, ...)` 截断，否则报 `ValueError: y=... is outside the 0-1000 viewport coordinate space`。
+
+## 监控循环（直接复用）
+
+每 8-10 秒一轮，每轮做四件事：读 video 状态 → 读弹窗可见性 → **读右侧目录并校验当前小节** → 按需操作。
+完整脚本见 `scripts/watch_loop.py`。
+
+**每轮顺序（重要）：**
+
+1. 读 `video.currentTime / duration / paused / ended` + `.dialog-test` 可见性
+2. **弹题优先**：弹窗可见 → 处理弹题 → `continue`
+3. **目录校验**：读当前高亮小节
+   - 读不到 → 等下一轮
+   - **已完成 → 切到下一未完成小节 → `continue`**
+   - 未完成 → 进第 4 步
+4. **保证在播**：`paused` → 点中央；**`ended` → 什么都不做**（等打勾）
+
+**循环要点：**
+- 每轮打印 `rN / 秒 / ct / dur / paused / ended / dlg` 便于追踪
+- 弹窗出现 → 读选项矩形 → 按规则坐标点击 → 截图 → 点关闭 → **检查是否弹出「未做答不能关闭」提示框** → 若有则关提示框、重选、再关
+- 切换小节后**必须校验**新的高亮项是未完成的
+- 找不到未完成小节 → 滚目录再找 → 连滚两次仍无 → 打印出来，**不要静默失败**
+
+## pick_next_section 筛选规则
+
+```js
+// 右侧目录 li 同时满足：
+// 1. x > window.innerWidth * 0.7  （只看右侧目录，排除左侧视频区）
+// 2. 文本匹配 /00:\d{2}:\d{2}/    （有时长，排除章节标题行）
+// 3. 不含 .time_icofinish          （没打勾）
+// 4. 不含 .progress-num            （没在进行中）
+// 5. y 在视口内 (0 < y < innerHeight)
+// 取第一个满足的
+```
+
+## 操作者使用说明（给用户看）
+
+1. 先在浏览器打开智慧树课程学习页，完成登录。
+2. 告诉 agent「帮我自动刷智慧树这门课」即可启动值守。
+3. 值守过程中不要手动操作浏览器窗口，让自动流程处理弹题和章节切换。
+4. 弹题对错不计较（按规则乱选），只要不卡弹窗就行。
+5. 如果想中途停下，直接说「停」或「暂停值守」。
+6. 值守结束后浏览器窗口会保留，方便检查进度。
+7. **值守会自动跳过已完成的小节** —— 只会播未完成的。
+
+## 已修复的坑（2026-10-08）
+
+| 坑 | 现象 | 修法 |
+|---|---|---|
+| **多选误判** | `'多选' in dlg.innerText` —— 全文包含题干，**只会误判不会帮忙** | 只匹配 `.topic-title` |
+| **弹窗消失竞态** | 判完 `dialogOpen` 到读弹窗之间有往返延迟，`dlg` 可能为 null → `dlg.querySelectorAll` 抛错 → **脚本死** | JS 里加 `if (!dlg) return null;` |
+| **未做答死循环** | 多选没选上 → 点关闭 → 弹提示框 → 点中央点到提示框上 → `break` → **每次重跑都卡同一处** | 实现「关提示框 → 重读选项 → 重选 → 再关」完整流程 |
+| **播完重播** | `video.ended` 时点中央，若中央是"重播"按钮 → **整节白看** | `ended` 时什么都不做，等目录打勾 |
+| **空选项静默失败** | `.topic-item` 读不到 → 不点选项 → 直接点关闭 → **触发死循环** | `options` 为空时**绝不点关闭**，报错并跳过 |
+| **值守空窗期** | 处理完弹题就 `break` → 退出循环 → 第二道弹题没人管 | 改成 `continue` |
+
+## 已验证走不通的做法（不要重试）
+
+- `element.click()` 对弹题选项无效，必须坐标点击
+- 凭像素估计坐标点选项 `<li>` 会点偏（点到 LI 外部），必须先 getBoundingClientRect
+- `offsetParent!==null` 判断 fixed 弹窗不可靠（fixed 元素 offsetParent 为 null）
+- `bu.scroll` 传像素坐标报 BU_COORDINATE_SPACE，必须归一化
+- Python 字典字面量 `{x: ...}` 中 x 被当变量名导致 NameError，必须写 `{'x': ...}`
+- 多选题没选就点关闭 → 弹"未做答不能关闭"，需先关提示框再重选
