@@ -59,7 +59,8 @@
 zhihuishu-auto-watch/
 ├── SKILL.md                    # 技能主文件（给 agent 读的指令）
 ├── references/
-│   └── dom-selectors.md        # DOM 结构 + 踩坑记录 + 异常对照表
+│   ├── dom-selectors.md        # DOM 结构 + 踩坑记录 + 异常对照表
+│   └── porting.md              # 【移植指南】换 AI 环境怎么接
 └── scripts/
     ├── probe.py                # 【换机器先跑这个】只读探测，不点任何鼠标
     └── watch_loop.py           # 监控循环脚本
@@ -69,8 +70,34 @@ zhihuishu-auto-watch/
 |---|---|
 | **SKILL.md** | 前置条件、**红线规则**、坐标换算、循环逻辑、**已验证走不通的做法** |
 | **dom-selectors.md** | 页面结构、关键选择器、"未做答不能关闭"陷阱、异常对照表 |
+| **porting.md** | **移植指南**：4 个原语的契约 + 常见环境适配示例 |
 | **probe.py** | **只读探测**：打印 video / 目录 / 弹题的几何信息，确认选择器是否可用 |
 | **watch_loop.py** | 监控循环主体 |
+
+---
+
+## 🎯 移植到别的 AI 环境：只改 4 个函数
+
+**这个 skill 不依赖任何特定 AI 平台。它只需要 4 个原语：**
+
+| 原语 | 签名 | 要求 |
+|---|---|---|
+| **`js(code)`** | `-> Any` | 在已打开的页面里执行 JS。**只读用途** |
+| **`click_xy(nx, ny)`** | `-> None` | 鼠标**点击**，坐标 **0~1000 归一化** |
+| **`scroll(nx, ny, dir, amount)`** | `-> None` | 鼠标**滚动**，坐标同上 |
+| **`screenshot(tag)`** | `-> None` | 截图，**可选** |
+
+**两个脚本顶部都有「环境适配层」—— 把那 4 个函数体换成你自己环境的调用即可，其余代码一行都不用动。**
+
+```
+你的 AI 环境  →  【适配层 4 个函数】  →  watch_loop.py
+  (任意 API)                          (业务逻辑，不用改)
+```
+
+**常见环境适配示例**（Playwright / CDP / Claude computer-use / OpenAI computer-use / 没有 scroll 原语）
+→ 见 [`references/porting.md`](references/porting.md)
+
+> **核心**：只要你的 AI 能做到「读 DOM」和「用鼠标点」，这个 skill 就能跑。
 
 ---
 

@@ -5,11 +5,33 @@ description: 智慧树(zhihuishu.com)课程学习页自动值守助手。视频�
 
 # 智慧树自动值守
 
+## 🎯 移植到别的 AI 环境：只改 4 个函数
+
+**这个 skill 只依赖 4 个原语，与具体 AI 平台无关：**
+
+| 原语 | 签名 | 要求 |
+|---|---|---|
+| **`js(code)`** | `-> Any` | 在**已打开的页面**里执行 JS，返回结果。**只读用途** |
+| **`click_xy(nx, ny)`** | `-> None` | 鼠标**点击**，坐标 **0~1000 归一化** |
+| **`scroll(nx, ny, dir, amount)`** | `-> None` | 鼠标**滚动**，坐标同上 |
+| **`screenshot(tag)`** | `-> None` | 截图，**可选**，没有就空实现 |
+
+**`scripts/watch_loop.py` 和 `scripts/probe.py` 顶部都有「环境适配层」，
+把那 4 个函数体换成你自己环境的调用即可 —— 其余代码一行都不用动。**
+
+**常见环境（Playwright / CDP / Claude computer-use / OpenAI computer-use）的适配示例，
+见 [`references/porting.md`](references/porting.md)。**
+
+> **核心**：只要你的 AI 能做到「读 DOM」和「用鼠标点」，这个 skill 就能跑。
+
+---
+
 ## 前置条件
 
 - 浏览器已打开智慧树学习页（URL 形如 `https://studyvideoh5.zhihuishu.com/stuStudy?recruitAndCourseId=...`）
-- 用户已完成登录（如需登录，用 `interaction.request_action(type="browserControl")` 交接给用户）
-- 使用 `computer_use_tool` with `plane="bu"`，代码内 `import seed_browser_use as bu`
+- 用户已完成登录
+- **已按上面的说明接好「环境适配层」的 4 个原语**
+- 默认实现用 `import seed_browser_use as bu`（Doubao / 通用 browser-use 运行时）；**换了环境就改这一段**
 
 ## 🖥️ 跨机器适配（换电脑第一件事）
 

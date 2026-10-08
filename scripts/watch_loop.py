@@ -1,15 +1,32 @@
 """
-智慧树自动值守监控循环脚本模板。
+智慧树自动值守 —— 监控循环脚本（可移植版）
+
+============================================================
+🎯 移植到别的 AI 环境：只改「环境适配层」4 行
+============================================================
+
+本 skill 只需要你的环境提供 **4 个能力**：
+
+  | 原语 | 签名 | 要求 |
+  |---|---|---|
+  | `js`         | `js(code) -> Any`            | 在**已打开的页面**里执行 JS，返回 JSON 可序列化的值。**只读用途** |
+  | `click_xy`   | `click_xy(nx, ny)`           | 鼠标**点击**，坐标是 **0~1000 归一化值** |
+  | `scroll`     | `scroll(nx, ny, dir, amount)`| 鼠标**滚动**，坐标同上 |
+  | `screenshot` | `screenshot(tag)`            | 截图（可选，可空实现） |
+
+**只要你的 AI 能做到这 4 件事，这个脚本就能跑。**
+
+往下找到「环境适配层」，把那 4 个函数体改成你自己环境的调用。
+**其余代码一行都不用动。**
+
+常见环境的适配示例见 `references/porting.md`。
 
 ============================================================
 🚨 红线规则（任何改动都不得违反）
 ============================================================
 
-【1】所有操作一律通过「模拟鼠标」完成，只用这三个：
-
-      bu.click_xy(nx, ny)      点击（坐标 0~1000 归一化）
-      bu.scroll(x, y, dir, ...) 滚动
-      bu.screenshot(tag=...)   截图
+【1】所有操作一律通过「模拟鼠标」完成，只用上面那 3 个写操作
+      （click_xy / scroll / screenshot）
 
 【2】禁止任何形式的「直接操作 DOM」：
 
@@ -25,10 +42,9 @@
 
       ✗ requests / urllib / httpx / aiohttp
       ✗ fetch(...) / XMLHttpRequest
-      ✗ Selenium / Playwright 的 request 接口
       ✗ 直接请求智慧树的任何接口
 
-【4】bu.js(...) 只允许「只读」用途：
+【4】js(...) 只允许「只读」用途：
 
       ✓ getBoundingClientRect()   → 算坐标
       ✓ innerText / className     → 判断状态
@@ -37,43 +53,29 @@
       ✗ 任何写操作（见【2】）
 
 ============================================================
-🖥️ 跨机器适配（重要）
+🖥️ 跨机器适配
 ============================================================
-把这份脚本搬到别人的电脑上，**坐标会全部失效**，因为：
+不同电脑的分辨率、窗口大小、浏览器缩放都不同。
+**本脚本不硬编码任何屏幕坐标**，全部从 DOM 实时探测：
 
-  · 屏幕分辨率不同
-  · 浏览器窗口大小不同
-  · 浏览器缩放比例不同（90% / 100% / 125%）
-  · 智慧树自己的 UI 布局可能改版
-
-**所以本脚本不硬编码任何屏幕坐标，全部从 DOM 实时探测：**
-
-  | 要点的位置 | 怎么算出来 |
+  | 要点的位置 | 怎么算 |
   |---|---|
-  | 视频画面中央 | 读 `<video>` 元素的 `getBoundingClientRect()`，取中心 |
-  | 右侧目录区域 | 把所有「有时长的小节 li」的包围盒聚在一起，取整体中心 |
-  | 某个选项/按钮 | 读该元素的 `getBoundingClientRect()`，取中心 |
+  | 视频画面中央 | 读 <video> 的 getBoundingClientRect()，取中心 |
+  | 右侧目录区域 | 把所有「有时长的小节 li」按 x 聚类，取整体包围盒 |
+  | 选项 / 按钮 / X | 读该元素的 getBoundingClientRect()，取中心 |
 
-**换成像素坐标后统一归一化**：
+换算：`归一化 = 像素 / 视口尺寸 × 1000`
 
-      归一化 = 像素 / 视口尺寸 × 1000      （范围 0~1000）
-
-**所以只要"元素能在 DOM 里被找到"，坐标就永远是对的。**
-
-**新机器上第一次运行，请先跑 `scripts/probe.py`（只读探测，不点任何鼠标），
-确认它打印的 video / 目录 / 弹题几何信息是正确的，再跑本脚本。**
+**换机器后先跑 `scripts/probe.py`（只读探测），确认几何信息正确再跑本脚本。**
 
 ============================================================
-用法
+修订记录（2026-10-08）
 ============================================================
-把 "===== 复制开始 =====" 到 "===== 复制结束 =====" 之间的代码
-复制到 computer_use_tool(plane="bu") 的 code 中运行。
-
-修订记录（2026-10-08）：
-  · 去掉全部硬编码屏幕坐标，改为 DOM 实时探测（跨机器适配）
+  · 新增「环境适配层」——移植只需改 4 行
+  · 去掉全部硬编码屏幕坐标，改为 DOM 实时探测
   · 修复 多选误判：只匹配 .topic-title，不再扫全文
   · 修复 .dialog-test 为 null 时崩溃
-  · 新增「未做答不能关闭」提示框处理（点 X → 重选 → 再关）
+  · 新增「未做答不能关闭」提示框处理
   · 修复 视频 ended 后点中央导致重播
   · 修复 options 为空时仍点关闭 → 触发死循环
   · 修复 break 导致每次只处理一个事件
@@ -81,10 +83,53 @@
 """
 
 # ===== 复制开始 =====
-import seed_browser_use as bu
 import time
 
-# ==================== 可调参数（换机器主要调这里） ====================
+# ============================================================
+# 环境适配层  ⚠️ 移植时【只改这一段】
+# ============================================================
+
+# --- 默认实现：Doubao / 通用 browser-use 运行时 ---
+try:
+    import seed_browser_use as _rt
+except ImportError:                     # 换环境时这里会失败 —— 正常，见下
+    _rt = None
+
+
+def js(code):
+    """在页面里执行只读 JS，返回 JSON 可序列化的值。"""
+    if _rt is None:
+        raise RuntimeError("请先在「环境适配层」里接入你自己环境的 js()")
+    return _rt.js(code)
+
+
+def click_xy(nx, ny):
+    """按 0~1000 归一化坐标模拟鼠标点击。"""
+    if _rt is None:
+        raise RuntimeError("请先在「环境适配层」里接入你自己环境的 click_xy()")
+    _rt.click_xy(nx, ny)
+
+
+def scroll(nx, ny, direction, amount=2):
+    """按 0~1000 归一化坐标模拟滚动。"""
+    if _rt is None:
+        raise RuntimeError("请先在「环境适配层」里接入你自己环境的 scroll()")
+    _rt.scroll(nx, ny, direction, amount=amount)
+
+
+def screenshot(tag=""):
+    """截图（可选）。没有这个能力时空实现即可。"""
+    if _rt is None:
+        return
+    _rt.screenshot(tag=tag)
+
+
+# 下面这些名字在旧版脚本里用过，保留以免破坏兼容
+bu = _rt
+
+# ============================================================
+# 可调参数（换机器主要调这里）
+# ============================================================
 RUN_SECONDS = 270        # 单次运行上限（秒），需小于外层工具超时
 LOOP_SLEEP = 8           # 每轮间隔（秒）
 DEBUG = True
@@ -94,34 +139,35 @@ DEBUG = True
 MIN_SECTION_W = 100
 MIN_SECTION_H = 14
 
-# 目录聚合：把所有小节 li 的 x 坐标聚类，允许偏离中位数多少比例算同一栏。
+# 目录聚类：所有小节 li 的 x 坐标中位数，允许偏离多少比例算同一栏。
 # 布局改版导致目录识别不准时，调这个值。
 CATALOG_X_TOLERANCE = 0.15
 
 # 启动时打印一次探测到的几何信息（换机器时看这个判断对不对）
 SELF_CHECK = True
-# ===================================================================
 
 
-# ==================== 基础工具 ====================
+# ============================================================
+# 基础工具
+# ============================================================
 def log(*args):
     print(*args, flush=True)
 
 
 def vp_size():
     """视口尺寸。归一化坐标全靠它。"""
-    return bu.js("return {w: window.innerWidth, h: window.innerHeight};")
+    return js("return {w: window.innerWidth, h: window.innerHeight};")
 
 
 def rect_center(rect):
-    """像素矩形 → 视口中心点。返回像素坐标，不做归一化。"""
+    """像素矩形 → 中心点（像素坐标）。"""
     return (rect['x'] + rect['w'] / 2, rect['y'] + rect['h'] / 2)
 
 
 def click_rect(rect, label=""):
     """
     点矩形的中心。
-    ⚠️ 不使用 element.click()，只用归一化坐标 + bu.click_xy 模拟鼠标。
+    ⚠️ 不使用 element.click()，只用归一化坐标 + 模拟鼠标。
     """
     if not rect or rect.get('w', 0) <= 0 or rect.get('h', 0) <= 0:
         log("  [warn] click_rect 收到无效矩形 %s %s" % (label, rect))
@@ -134,11 +180,13 @@ def click_rect(rect, label=""):
     ny = max(0, min(999, ny))
     if DEBUG and label:
         log("  click %s  px=(%.0f,%.0f)  norm=(%d,%d)" % (label, cx, cy, nx, ny))
-    bu.click_xy(nx, ny)
+    click_xy(nx, ny)
     return True
 
 
-# ==================== 几何探测（跨机器适配的核心） ====================
+# ============================================================
+# 几何探测（跨机器适配的核心）
+# ============================================================
 VIDEO_RECT_JS = r"""
 const v = document.querySelector('video');
 if (!v) return null;
@@ -149,8 +197,8 @@ return {x: r.x, y: r.y, w: r.width, h: r.height};
 
 
 def video_rect():
-    """视频播放区域的矩形。用它算「点画面中央」，不再硬编码 (500,500)。"""
-    return bu.js(VIDEO_RECT_JS)
+    """视频播放区域的矩形。用它算「点画面中央」，不硬编码 (500,500)。"""
+    return js(VIDEO_RECT_JS)
 
 
 def click_video_center(label="video-center"):
@@ -159,16 +207,17 @@ def click_video_center(label="video-center"):
     if not r:
         # 兜底：点视口正中。
         # 注意 500,500 是【归一化坐标】(0~1000) 的正中，等价于"屏幕 50% 位置"，
-        # 不是像素值 —— 所以换分辨率依然成立。仅在找不到 <video> 时走这里。
+        # 不是像素值 —— 换分辨率依然成立。仅在找不到 <video> 时走这里。
         log("  [warn] 找不到 <video>，退化为点视口正中（归一化 500,500）")
-        bu.click_xy(500, 500)
+        click_xy(500, 500)
         return
     click_rect(r, label)
 
 
-# ==================== 右侧目录 ====================
+# ============================================================
+# 右侧目录
+# ============================================================
 SECTION_JS = r"""
-// 找出所有「看起来是小节条目」的 li
 const vw = window.innerWidth, vh = window.innerHeight;
 const raw = [];
 document.querySelectorAll('li').forEach((li) => {
@@ -197,7 +246,6 @@ const tol = vw * %(tol)f;
 let items = raw.filter(o => Math.abs(o.x - medianX) <= tol);
 if (!items.length) items = raw;            // 兜底：聚不出来就全用
 
-// 目录整体包围盒（用于滚动）
 let minX = 1e9, minY = 1e9, maxX = -1e9, maxY = -1e9;
 items.forEach(o => {
   minX = Math.min(minX, o.x);  maxX = Math.max(maxX, o.x + o.w);
@@ -215,12 +263,11 @@ return {
 
 
 def read_catalog():
-    js = SECTION_JS % {
+    return js(SECTION_JS % {
         'minw': MIN_SECTION_W,
         'minh': MIN_SECTION_H,
         'tol': CATALOG_X_TOLERANCE,
-    }
-    return bu.js(js)
+    })
 
 
 def get_current_section():
@@ -253,20 +300,18 @@ def pick_next_unfinished(avoid_text=None):
 
 
 def scroll_catalog():
-    """滚动右侧目录。滚动点从目录包围盒实时算，不硬编码 (850,500)。"""
+    """滚动右侧目录。滚动点从目录包围盒实时算。"""
     cat = read_catalog()
     c = cat.get('catalog')
     if not c:
         log("  [warn] 探测不到目录区域，跳过滚动")
         return False
     s = vp_size()
-    nx = round((c['x'] + c['w'] / 2) / s['w'] * 1000)
-    ny = round((c['y'] + c['h'] / 2) / s['h'] * 1000)
-    nx = max(0, min(999, nx))
-    ny = max(0, min(999, ny))
+    nx = max(0, min(999, round((c['x'] + c['w'] / 2) / s['w'] * 1000)))
+    ny = max(0, min(999, round((c['y'] + c['h'] / 2) / s['h'] * 1000)))
     if DEBUG:
         log("  scroll 目录 norm=(%d,%d)  目录盒=%s" % (nx, ny, c))
-    bu.scroll(nx, ny, "down", amount=2)
+    scroll(nx, ny, "down", amount=2)
     return True
 
 
@@ -306,7 +351,9 @@ def goto_next_unfinished():
     return False
 
 
-# ==================== 弹题处理 ====================
+# ============================================================
+# 弹题处理
+# ============================================================
 QUIZ_JS = r"""
 const dlg = document.querySelector('.dialog-test');
 if (!dlg) return null;                       // ← 防 null
@@ -347,7 +394,7 @@ const hits = Array.from(document.querySelectorAll('div, section, article'))
 if (!hits.length) return null;
 hits.sort((a, b) => {
   const ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
-  return ra.width * ra.height - rb.width * rb.height;   // 取面积最小的那层
+  return ra.width * ra.height - rb.width * rb.height;
 });
 const tip = hits[0];
 const tr = tip.getBoundingClientRect();
@@ -357,7 +404,7 @@ const x = Array.from(tip.querySelectorAll('i, span, button, div, a'))
                 cls: (e.className || '').toString()}))
   .filter((o) => o.r.width >= 8 && o.r.height >= 8
               && (['×','✕','x','X','✖','╳'].includes(o.t) || /close|cls/i.test(o.cls)))
-  .sort((a, b) => (a.r.y - b.r.y) || (b.r.x - a.r.x))[0];   // 右上角优先
+  .sort((a, b) => (a.r.y - b.r.y) || (b.r.x - a.r.x))[0];
 return {
   tipRect: {x: tr.x, y: tr.y, w: tr.width, h: tr.height},
   closeRect: x ? {x: x.r.x, y: x.r.y, w: x.r.width, h: x.r.height} : null,
@@ -367,11 +414,11 @@ return {
 
 
 def read_quiz():
-    return bu.js(QUIZ_JS)
+    return js(QUIZ_JS)
 
 
 def read_tip():
-    return bu.js(TIP_JS)
+    return js(TIP_JS)
 
 
 def click_all_options(options):
@@ -416,7 +463,7 @@ def handle_quiz():
         time.sleep(0.6)
 
     time.sleep(1.0)
-    bu.screenshot(tag="after-answer")
+    screenshot(tag="after-answer")
 
     click_close(q['closeRect'])
 
@@ -442,7 +489,7 @@ def handle_quiz():
             else:
                 click_rect(q2['options'][0], "opt0")
             time.sleep(1.0)
-            bu.screenshot(tag="retry-answer")
+            screenshot(tag="retry-answer")
 
         click_close(q2['closeRect'])
 
@@ -451,17 +498,19 @@ def handle_quiz():
             return True
 
     # ---- 关掉后若暂停，点视频中央恢复 ----
-    v = bu.js("const v=document.querySelector('video'); return v?{paused:!!v.paused}:null;")
+    v = js("const v=document.querySelector('video'); return v?{paused:!!v.paused}:null;")
     if v and v['paused']:
         click_video_center("resume-after-quiz")
         time.sleep(1.5)
 
-    bu.screenshot(tag="after-close")
+    screenshot(tag="after-close")
     log("  [ok] 弹题处理完毕")
     return True
 
 
-# ==================== 启动自检（换机器必看） ====================
+# ============================================================
+# 启动自检（换机器必看）
+# ============================================================
 if SELF_CHECK:
     s = vp_size()
     vr = video_rect()
@@ -482,7 +531,9 @@ if SELF_CHECK:
     log("=" * 56)
 
 
-# ==================== 主循环 ====================
+# ============================================================
+# 主循环
+# ============================================================
 start = time.time()
 rounds = 0
 
@@ -490,7 +541,7 @@ while time.time() - start < RUN_SECONDS:
     rounds += 1
     elapsed = round(time.time() - start)
 
-    state = bu.js(r"""
+    state = js(r"""
     const v = document.querySelector('video');
     if (!v) return {err: 'no video'};
     const dlg = document.querySelector('.dialog-test');

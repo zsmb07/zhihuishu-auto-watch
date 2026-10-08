@@ -18,7 +18,7 @@
 ============================================================
 红线（同样适用）
 ============================================================
-· 只读：全部 bu.js 都是 querySelector / getBoundingClientRect / innerText
+· 只读：全部 js(...) 调用都是 querySelector / getBoundingClientRect / innerText
 · 不点鼠标、不滚动、不截图
 · 不发起任何网络请求
 
@@ -30,7 +30,26 @@
 """
 
 # ===== 复制开始 =====
-import seed_browser_use as bu
+# ============================================================
+# 环境适配层  ⚠️ 移植时【只改这一段】（和 watch_loop.py 保持一致）
+# ============================================================
+try:
+    import seed_browser_use as _rt
+except ImportError:                     # 换环境时这里会失败 —— 正常
+    _rt = None
+
+
+def js(code):
+    """在页面里执行只读 JS，返回 JSON 可序列化的值。"""
+    if _rt is None:
+        raise RuntimeError("请先在「环境适配层」里接入你自己环境的 js()")
+    return _rt.js(code)
+
+
+# 其余三个原语 probe.py 用不到（它只读，不点鼠标）
+# 见 references/porting.md
+
+bu = _rt
 
 LOG = []
 
@@ -46,7 +65,7 @@ log("智慧树页面只读探测")
 log("=" * 60)
 
 # ---------- 1. 视口 ----------
-s = bu.js("return {w: window.innerWidth, h: window.innerHeight, dpr: devicePixelRatio};")
+s = js("return {w: window.innerWidth, h: window.innerHeight, dpr: devicePixelRatio};")
 log("")
 log("【1】视口")
 log("  innerWidth  = %s" % s.get('w'))
@@ -57,7 +76,7 @@ log("  → 归一化坐标 = 像素 / 视口 × 1000，所以视口大小不影�
 # ---------- 2. video ----------
 log("")
 log("【2】视频区域")
-v = bu.js(r"""
+v = js(r"""
 const v = document.querySelector('video');
 if (!v) return null;
 const r = v.getBoundingClientRect();
@@ -81,7 +100,7 @@ else:
 # ---------- 3. 右侧目录 ----------
 log("")
 log("【3】右侧目录（小节列表）")
-cat = bu.js(r"""
+cat = js(r"""
 const vw = window.innerWidth, vh = window.innerHeight;
 const raw = [];
 document.querySelectorAll('li').forEach((li) => {
@@ -144,7 +163,7 @@ for o in cands[:5]:
 # ---------- 4. 弹题弹窗 ----------
 log("")
 log("【4】弹题弹窗")
-dlg = bu.js(r"""
+dlg = js(r"""
 const dlg = document.querySelector('.dialog-test');
 if (!dlg) return {present: false};
 const r = dlg.getBoundingClientRect();
